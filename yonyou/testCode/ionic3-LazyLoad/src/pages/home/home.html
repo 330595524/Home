@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+ <ion-item detail-push >
+    <ion-icon
+        class="animation3D iconfont"
+        name='ios-option-travel'
+        color="primary"
+        item-left>
+    </ion-icon>
+</ion-item>
+
+
+    <button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+    show = {{show}}
+    <br>
+      <div *ngIf="show; else elseBlock">this is ignored</div>
+    <ng-template #elseBlock>Alternate text while primary3 text is hidden3</ng-template>
+
+<test></test>
+
+
+
+
+
+
+
+<ion-toolbar style="padding: 0;margin: 0;border: none;min-height: 44px;">
+    <ion-row no-padding>
+      <ion-col>
+        <button type="button" no-lines ion-item detail-none text-center color="calm"  (click)='goPageWhere($event);'>
+          <h2 style="text-align: center">认领</h2>
+        </button>
+      </ion-col>
+
+    </ion-row>
+  </ion-toolbar>
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>
+<ion-footer no-border>
+
+  <ion-toolbar style="padding: 0;margin: 0;border: none;min-height: 44px;">
+    <ion-row no-padding>
+      <ion-col>
+
+        <button type="button" no-lines ion-item detail-none text-center  (click)="fnClaim($event);">
+          <h2 style="text-align: center">认领</h2>
+        </button>
+      </ion-col>
+
+    </ion-row>
+  </ion-toolbar>
+
+</ion-footer>
